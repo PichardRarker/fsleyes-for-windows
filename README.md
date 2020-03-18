@@ -1,16 +1,17 @@
 # fsleyes-for-windows
 A simple .exe wrapper for FSLeyes, allowing it to be launched from the Windows GUI. An equivalent is also provided for (the now deprecated) FSLview.
 
-![](https://github.com/PichardRarker/fsleyes-for-windows/blob/master/fsleyes-for-windows.png)
+![](https://github.com/PichardRarker/fsleyes-for-windows/blob/master/fsleyes-for-windows.png) 
 
  ## Usage
  Double-clicking the fsleyes desktop shortcut will open the program. Right clicking on a `.nii` or `nii.gz` file, 
 
 
-## Prerequisites
+## Requirements
    1. Windows 10
    2. [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-   3. A [Windows X client](https://superuser.com/questions/99303/what-are-my-x-client-options-for-ms-windows)
+   3. A Windows [X client](https://superuser.com/questions/99303/what-are-my-x-client-options-for-ms-windows)
+   4. A recent build of [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki) (.exe developed on FSL 6.0.3)
    
 ## Install instructions
    1. After downloading the WSL Linux distribution of your choice, follow the [official FSL install instructions for Windows WSL ](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Windows). If you've done this previously, then a re-install shouldn't be neccessary. If you've already downloaded an X client for your windows machine, then you can skip this step in the FSL instructions: `2. Install XMING (in Windows)`
