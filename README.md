@@ -1,5 +1,7 @@
 # fsleyes-for-windows
-A simple .exe wrapper for FSLeyes, allowing it to be launched from the Windows GUI. An equivalent is also provided for the now deprecated FSLView.
+A simple .exe wrapper for FSLeyes, allowing it to be launched from the Windows GUI. An equivalent is also provided for (the now deprecated) FSLview.
+
+![](https://github.com/PichardRarker/fsleyes-for-windows/blob/master/fsleyes-for-windows.png)
 
  ## Usage
  Double-clicking the fsleyes desktop shortcut will open the program. Right clicking on a `.nii` or `nii.gz` file, 
