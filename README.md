@@ -9,7 +9,7 @@ A simple .exe wrapper for FSLeyes, allowing it to be started from the Windows GU
    
 ## Install instructions
    1. After downloading the WSL Linux distribution of your choice, follow the [official FSL install instructions for Windows WSL ](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Windows). If you've done this previously, then a re-install shouldn't be neccessary. If you've already downloaded an X client for your windows machine, then you can skip this step in the FSL instructions: `2. Install XMING (in Windows)`
-   2. As per the [offocial FSL shell setup instructions](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/ShellSetup), add the following to your WSL ~/.bashrc file:
+   2. As per the [official FSL shell setup instructions](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/ShellSetup), add the following to your WSL ~/.bashrc file:
       ```
       FSLDIR=/usr/local/fsl
       . ${FSLDIR}/etc/fslconf/fsl.sh
