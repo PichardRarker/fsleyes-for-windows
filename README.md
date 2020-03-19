@@ -4,7 +4,7 @@ Scripts and instructions for creating a simple .exe wrapper for FSLeyes, allowin
 ![](https://github.com/PichardRarker/fsleyes-for-windows/blob/master/fsleyes-for-windows.png) 
 
  ## Usage
- After setup, double-clicking the fsleyes shortcut will open the program. It's also possible to set fsleyes.exe as the default program for opening `.nii` or `nii.gz` files,  using the `'Open with'` option after right-clicking on a suitable file (works when opening files from remote locations, also).<br>
+ After setup, double-clicking the fsleyes shortcut will open the program. It's also possible to set `fsleyes.exe` as the default program for opening `.nii` or `nii.gz` files,  using the `'Open with'` option after right-clicking on a suitable file (works when opening files from remote locations, also).<br>
 <br>
  :warning:```You must have an X server running for the program to work! See the setup instructions.```
 
@@ -35,20 +35,22 @@ Scripts and instructions for creating a simple .exe wrapper for FSLeyes, allowin
       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /target:winexe fsleyes.cs /win32icon:fsleyes.ico
       ```
    6. You should now see `fsleyes.exe` in the setup directory. You'll probably want to create a shortcut to this file in a more convenient location.  
-   7. Prior to launching fsleyes.exe, make sure your X client of choice is up and running. This code was tested using the X server tools integrated into [MobaXterm](https://mobaxterm.mobatek.net/), but any reuptable Windows X client should do the job. 
-   8. FSLeyes is a fantastic tool, but can sometimes be a bit slow to render 4D NIfTIs. In my experience, FSLview's `Movie Mode` is much faster than the FSLeyes equivalent (important when assessing motion within fMRI or dMRI sequences, for example). If you also want to create an `fslview.exe`, follow steps 4-6, but use `'fslview'` instead of `'fsleyes'` when compiling. Assuming the same path structure as in step 4, fslview.exe setup tools can be found here:
+    :warning:```Don't move the actual .exe file! This will break things.```
+   7. Prior to launching `fsleyes.exe`, make sure your X client of choice is up and running. This code was tested using the X server tools integrated into [MobaXterm](https://mobaxterm.mobatek.net/), but any reputable Windows X client should do the job. 
+   8. View things! `fsleyes.exe` will be a bit slow to launch the first time, but should be a bit quicker on subsequent executions.
+   9. FSLeyes is a fantastic tool, but can sometimes be a bit slow to launch. In my experience, FSLview opens a lot quicker, and its `Movie Mode` function is much faster than the FSLeyes equivalent (important when assessing motion within fMRI or dMRI sequences, for example). If you also want to create an `fslview.exe`, follow steps 4-6, but use `'fslview'` instead of `'fsleyes'` when compiling. Assuming the same path structure as in step 4, `fslview.exe` setup tools can be found here:
     ```
     C:\Users\rparker\Documents\fsleyes-for-windows\fslview
     ```
    
    ## Debugging
    
-   Both fsleyes.exe and fslview.exe create a small logfile in their respective install directories (and these same files are over-written with each execution). If the applications fail to open, these files should point to the issue. If no logfiles are generated, then this means `fsleyes_wrapper.sh`/`fslview_wrapper.sh` has not been called, and points to an issue with the WSL setup.<br>
+   Both `fsleyes.exe` and `fslview.exe` create a small logfile in their respective install directories (and these same files are over-written with each execution). If the applications fail to open, these files should point to the issue. If no logfiles are generated, then this means `fsleyes_wrapper.sh`/`fslview_wrapper.sh` has not been called, and points to an issue with the WSL setup.<br>
    <br>
    Any problems, then please let me know!
    
    ## Resources 
    
-   fsleyes.ico and fslview.ico files generated using images stolen (with great respect) from official FSL sources. 
+   fsleyes.ico and fslview.ico files generated using images stolen (with the utmost respect) from official FSL sources. 
    
 
