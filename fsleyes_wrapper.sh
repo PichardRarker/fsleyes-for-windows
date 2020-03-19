@@ -5,7 +5,7 @@ function script_help {
   echo 'File:                   fsleyes_wrapper.sh'
   echo ""
   echo 'Description:            Simple wrapper for FSLeyes, designed to be used in WSL. Script initialises'
-  echo '                        FSL, sets up some logfiles, then launches fsleyes'
+  echo '                        FSL, sets up some logfiles, then launches FSLeyes'
   echo ""
   echo 'Author(s):              Richard Parker'
   echo ""
