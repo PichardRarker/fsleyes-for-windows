@@ -43,9 +43,9 @@ Scripts and instructions for creating a simple .exe wrapper for FSLeyes, allowin
    
    ## Debugging
    
-   Both fsleyes.exe and fslview.exe create a small logfile in their respective install directories (and these same files are over-written with each execution). If the applications fail to open, these files should point to the issue. If no logfiles are generated, then this means `fsleyes_wrapper.sh`/`fslview_wrapper.sh` has not been called, and points to an issue with the WSL setup.
+   Both fsleyes.exe and fslview.exe create a small logfile in their respective install directories (and these same files are over-written with each execution). If the applications fail to open, these files should point to the issue. If no logfiles are generated, then this means `fsleyes_wrapper.sh`/`fslview_wrapper.sh` has not been called, and points to an issue with the WSL setup.<br>
    <br>
-   Any issues, then please let me know!
+   Any problems, then please let me know!
    
    ## Resources 
    
